@@ -7,6 +7,8 @@ export const metadata = {
 import Hero from "@/components/hero-about";
 import Story from "@/components/story";
 import Features02 from "@/components/features-02";
+import Features03 from "@/components/features-03";
+
 import Recruitment from "@/components/recruitment";
 import Testimonials from "@/components/testimonials-02";
 import Cta from "@/components/cta-02";
@@ -16,6 +18,7 @@ export default function About() {
     <>
       <Hero />
       <Features02 />
+      <Features03 />
       <Cta />
     </>
   );

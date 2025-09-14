@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Particles from "./particles";
 import Illustration from "@/public/images/glow-bottom.svg";
+import AnimatedBear from "./animated-bear";
 
 export default function Hero() {
   return (
@@ -28,15 +29,23 @@ export default function Hero() {
         <div className="pt-32 pb-16 md:pt-52 md:pb-32">
           {/* Hero content */}
           <div className="max-w-3xl mx-auto text-center">
-            <div className="mb-6" data-aos="fade-down">
-              <div className="inline-flex relative before:absolute before:inset-0 before:bg-purple-500 before:blur-md">
+            {/* Animated Bear with Rings */}
+            <div
+              className="mx-auto relative flex items-center justify-center w-48 h-48 mb-4"
+              data-aos="fade-down"
+            >
+              <Particles className="absolute inset-0 -z-10" quantity={10} />
+              <AnimatedBear />
+            </div>
+            <div className="mb-6" data-aos="fade-down" data-aos-delay="200">
+              <div className="inline-flex relative before:absolute before:inset-0 before:bg-blue-500 before:blur-md">
                 <a
-                  className="btn-sm py-0.5 text-slate-300 hover:text-white transition duration-150 ease-in-out group [background:linear-gradient(var(--color-purple-500),var(--color-purple-500))_padding-box,linear-gradient(var(--color-purple-500),var(--color-purple-200)_75%,transparent_100%)_border-box] relative before:absolute before:inset-0 before:bg-slate-800/50 before:rounded-full before:pointer-events-none shadow-sm"
+                  className="btn-sm py-0.5 text-slate-300 hover:text-white transition duration-150 ease-in-out group [background:linear-gradient(var(--color-blue-500),var(--color-blue-500))_padding-box,linear-gradient(var(--color-blue-500),var(--color-blue-200)_75%,transparent_100%)_border-box] relative before:absolute before:inset-0 before:bg-slate-800/50 before:rounded-full before:pointer-events-none shadow-sm"
                   href="#0"
                 >
                   <span className="relative inline-flex items-center">
-                    Mobile app coming soon{""}
-                    <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+                    Mobile app coming soon{" "}
+                    <span className="tracking-normal text-blue-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                       -&gt;
                     </span>
                   </span>
@@ -52,7 +61,7 @@ export default function Hero() {
             <p
               className="text-lg text-slate-300 mb-8"
               data-aos="fade-down"
-              data-aos-delay="200"
+              data-aos-delay="400"
             >
               c0re helps you schedule distraction‑free sessions that temporarily
               block selected apps and websites. Quickly launch approved tools
@@ -62,7 +71,7 @@ export default function Hero() {
             <div
               className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4"
               data-aos="fade-down"
-              data-aos-delay="400"
+              data-aos-delay="600"
             >
               <div>
                 <a
@@ -70,7 +79,7 @@ export default function Hero() {
                   href="#0"
                 >
                   Join the beta{" "}
-                  <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+                  <span className="tracking-normal text-blue-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
                   </span>
                 </a>
@@ -88,7 +97,7 @@ export default function Hero() {
                   >
                     <path d="m1.999 0 1 2-1 2 2-1 2 1-1-2 1-2-2 1zM11.999 0l1 2-1 2 2-1 2 1-1-2 1-2-2 1zM11.999 10l1 2-1 2 2-1 2 1-1-2 1-2-2 1zM6.292 7.586l2.646-2.647L11.06 7.06 8.413 9.707zM0 13.878l5.586-5.586 2.122 2.121L2.12 16z" />
                   </svg>
-                  <span>Read the docs</span>
+                  <span>See whats new</span>
                 </a>
               </div>
             </div>

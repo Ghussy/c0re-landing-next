@@ -53,7 +53,7 @@ export default function Header() {
               >
                 <span className="relative inline-flex items-center">
                   Sign up{" "}
-                  <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+                  <span className="tracking-normal text-blue-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
                   </span>
                 </span>

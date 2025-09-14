@@ -33,8 +33,19 @@ export default function HeroAbout() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-32 pb-10 md:pt-40">
+        <div className="pt-32 pb-16 md:pt-52 md:pb-32">
           {/* Hero content */}
+
+          {/* Animated Bear with Rings */}
+          <div
+            className="mx-auto relative flex items-center justify-center w-48 h-48 mb-4"
+            data-aos="fade-down"
+            data-aos-delay="600"
+          >
+            <Particles className="absolute inset-0 -z-10" quantity={10} />
+            <AnimatedBear />
+          </div>
+
           <div className="text-center">
             <div className="mb-6" data-aos="fade-down">
               <div className="inline-flex relative before:absolute before:inset-0 before:bg-blue-500 before:blur-md">
@@ -67,16 +78,6 @@ export default function HeroAbout() {
               via deep links, and stay motivated with optional in‑app rewards —
               unlockable pets for time spent in focus mode.
             </p>
-
-            {/* Animated Bear with Rings */}
-            <div
-              className="mx-auto relative flex items-center justify-center w-48 h-48"
-              data-aos="fade-down"
-              data-aos-delay="600"
-            >
-              <Particles className="absolute inset-0 -z-10" quantity={10} />
-              <AnimatedBear />
-            </div>
 
             <div
               className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-8"
