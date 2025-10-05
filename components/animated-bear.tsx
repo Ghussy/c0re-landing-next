@@ -40,13 +40,18 @@ export default function AnimatedBear() {
       {/* Bear video in center */}
       <video
         className="relative w-full h-full drop-shadow-lg animate-float"
-        src="/video/good-bear_alpha.webm"
         autoPlay
         muted
         loop
         playsInline
         suppressHydrationWarning
-      />
+      >
+        <source src="/video/good-bear_alpha.webm" type="video/webm" />
+        <source
+          src="/video/good-bear_alpha_hvc1.mov"
+          type="video/quicktime; codecs=hvc1"
+        />
+      </video>
     </div>
   );
 }
